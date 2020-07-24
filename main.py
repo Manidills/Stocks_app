@@ -102,4 +102,4 @@ async def create_stock(stock_request: StockRequest, background_tasks: Background
 
 
 if __name__ == '__main__':
-       uvicorn.run(app,port=int(os.environ.get(“PORT”, 5000)),workers=1)
+       uvicorn.run(app,port=int(os.environ.get(5000)),workers=1)
