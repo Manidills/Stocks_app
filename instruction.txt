@@ -1,0 +1,6 @@
+How to Run:
+    - install all packages from req.txt
+    - run "RUN" file [In cmd type ./run]
+    - copy the url from terminal and open it on browser
+    - press add symbol button and insert companies symbol one by one [ Examples- MSFT,PG,AAPL ]
+    - reload the page , it take some time to fetch and store the data.
