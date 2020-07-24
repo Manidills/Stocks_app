@@ -1,4 +1,4 @@
-    import models
+import models
 import yfinance
 from fastapi import FastAPI, Request, Depends, BackgroundTasks
 from fastapi.templating import Jinja2Templates
