@@ -99,5 +99,5 @@ async def create_stock(stock_request: StockRequest, background_tasks: Background
     }
 
 
-port = int(os.environ.get('PORT', 5000))
-app.run(host='0.0.0.0', port=port)
+if __name__ == '__main__':
+uvicorn.run(app,host="0.0.0.0",port=5000)
