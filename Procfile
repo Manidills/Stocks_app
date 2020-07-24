@@ -1,1 +1,1 @@
-web: uvicorn main:app --bind 0.0.0.0:${PORT}
+web: python main.py
