@@ -7,6 +7,7 @@ from database import SessionLocal, engine
 from pydantic import BaseModel 
 from models import Stock
 from sqlalchemy.orm import Session
+import os
 
 app = FastAPI()
 
@@ -101,4 +102,4 @@ async def create_stock(stock_request: StockRequest, background_tasks: Background
 
 
 if __name__ == '__main__':
-       uvicorn.run(app,workers=1)
+       uvicorn.run(app,port=int(os.environ.get(“PORT”, 5000)),workers=1)
