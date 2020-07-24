@@ -1,6 +1,7 @@
 import models
+import uvicorn
 import yfinance
-from fastapi import FastAPI, Request, Depends, BackgroundTasks
+from fastapi import FastAPI, Request, Depends, BackgroundTasks,Query
 from fastapi.templating import Jinja2Templates
 from database import SessionLocal, engine
 from pydantic import BaseModel 
